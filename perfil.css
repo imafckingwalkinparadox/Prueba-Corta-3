@@ -1,0 +1,77 @@
+.img_perfil {
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem auto;
+}
+
+.img_perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.information{
+padding: 2rem 0rem;
+
+}
+
+
+.information h1 {
+    font-size: 2.5rem;
+}
+
+.information p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: rgb(17, 11, 36);
+}
+
+.estado{
+    margin: 2rem 0px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    color: rgb(17, 11, 36);
+}
+
+.redes{
+    display: flex;
+    gap: 1rem;
+    margin: 3rem 0px;
+}
+
+@media screen and (min-width: 1366px) {
+    .perfil {
+        width: 90%;
+        margin: auto;
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .information {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .estado {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .redes {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img_perfil {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        margin: auto;
+        align-items: right;
+    }
+
+
+}   
